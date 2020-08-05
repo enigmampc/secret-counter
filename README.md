@@ -1,6 +1,12 @@
 # Secret Counter
 
-This is a simple secret contract and a React interface, built by following the [Secret Network contracts guide](https://github.com/enigmampc/enigma-blockchain-contracts-guide)
+This quickstart guide will help you start learning how to develop secret contracts and secret apps! It includes a simple example of a secret contract, named secret counter, along with a React interface. Follow the steps below and let us know any feedback 🙂
+
+### Clone this repository
+```bash
+git clone https://github.com/enigmampc/secret-counter.git
+cd secret-counter && yarn
+```
 
 ### Start the network
 ```bash
@@ -20,13 +26,13 @@ docker-compose exec secretdev \
 
 ### Start the faucet, to fund burner wallets
 ```bash
+# in a new terminal
 git clone https://github.com/enigmampc/SecretNetwork/
-# check out develop branch for now
-git checkout develop
+# use develop branch for now
 cd SecretNetwork/cosmwasm-js
+git checkout develop
 # build the JS components
-yarn install
-yarn build
+yarn && yarn build
 # start the faucet
 cd packages/faucet
 yarn dev-start
@@ -53,7 +59,5 @@ cd client
 yarn start:local
 ```
 
-### If it all works so far, you can play with the counter.
+### Give it a try!
 ![](images/gui.png)
-
-### todo SecretJS / privacy
